@@ -31,3 +31,7 @@ def insert_Accessrecords(request):
     AR=Accessrecords.objects.get_or_create(name=WO,date=d,Authour=A)[0]
     AR.save()
     return HttpResponse("Aceessrecords data inserted successfully")
+
+
+
+
